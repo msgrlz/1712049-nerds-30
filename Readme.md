@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Margarita Puzanova](https://up.htmlacademy.ru/htmlcss/30/user/1712049).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://up.htmlacademy.ru/htmlcss/30/user/20140).
 
 ---
 

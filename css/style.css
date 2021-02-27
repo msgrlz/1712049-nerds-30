@@ -63,7 +63,7 @@
 
 /* Global */
 
-body {
+.page-body {
   min-width: 960px;
   margin: 0;
   padding: 0;
@@ -72,6 +72,11 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: var(--color-gray-700);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -86,16 +91,28 @@ img {
 /* Main header */
 
 .main-header {
+  padding-bottom: 37px;
   background-color: var(--basic-grey);
+}
+
+.main-header-logo {
+
 }
 
 .features-slider-title {
   margin: 0;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
 /* Main navigation */
 
 .main-navigation {
+  display: grid;
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -138,7 +155,7 @@ img {
 
 /* Title hidden */
 
-.title-hidden {
+.hidden {
   display: none;
 }
 
@@ -393,10 +410,10 @@ background-color: var(--basic-grey);
   background-color: var(--basic-white);
 }
 
-.pagination-item-current a,
-.pagination-item-current:hover a,
-.pagination-item-current:focus a,
-.pagination-item-current:active a {
+.pagination-item_active a,
+.pagination-item_active a:hover,
+.pagination-item_active a:focus,
+.pagination-item_active a:active {
   background-color: var(--basic-white);
 }
 
@@ -434,8 +451,8 @@ background-color: var(--basic-grey);
 .about {
   background-color: var(--basic-white);
   background-image: url("../img/logo/nerds-illustration.svg");
-  background-position: right 0 0;
-  background-repeat: no-repeat, repeat;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .about-title {
@@ -516,7 +533,6 @@ background-color: var(--basic-grey);
 }
 
 .button-green {
-  padding: 17px 54px 15px 54px;
   background-color: var(--basic-green);
 }
 
@@ -529,7 +545,6 @@ background-color: var(--basic-grey);
 }
 
 .button-yellow {
-  padding: 17px 54px 15px 54px;
   background-color: var(--basic-yellow);
 }
 

@@ -63,6 +63,10 @@
 
 /* Global */
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .page-body {
   min-width: 960px;
   margin: 0;
@@ -95,10 +99,6 @@ img {
   background-color: var(--basic-grey);
 }
 
-.main-header-bar {
-  background-color: var(--basic-grey);
-}
-
 .main-header-logo {
   justify-self: start;
 }
@@ -117,18 +117,13 @@ img {
 
 .main-navigation {
   display: grid;
+  grid-template-columns: 160px 1fr min-content;
+  column-gap: 40px;
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
 }
 
-.main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
 
 .main-navigation ul {
   list-style: none;
@@ -174,31 +169,30 @@ img {
 
 /* Content */
 
-.content {
-  width: 1160px;
+.container {
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
-.inner-page {
+.catalog-page {
   display: grid;
   grid-template-columns: 260px 1fr;
+  column-gap: 140px;
   align-content: start;
 }
 
 .content-title {
-  grid-column: 1 / -1;
   margin: 0;
   padding-bottom: 107px;
   text-align: center;
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 55px;
   background-color: var(--basic-grey);
 }
 
-.content-products {
-  padding-left: 141px;
+.content-title h1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
 }
 
 /* Features */
@@ -229,6 +223,10 @@ img {
 }
 
 /* Filters-value */
+
+.filters {
+  grid-row: span 2;
+}
 
 .filters-value {
   width: 260px;
@@ -391,8 +389,14 @@ img {
 
 /* Products */
 
-.products ul {
+.products-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 30px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .products-item {
@@ -503,10 +507,7 @@ background-color: var(--basic-grey);
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--basic-white);
-  background-image: url("../img/logo/nerds-illustration.svg");
-  background-position: right top;
-  background-repeat: no-repeat;
+  column-gap: 140px;
 }
 
 .about-title {
@@ -530,8 +531,13 @@ background-color: var(--basic-grey);
   font-weight: 400;
 }
 
-.about-desc {
+.about-right {
+  padding-top: 245px;
   justify-self: end;
+  background-color: var(--basic-white);
+  background-image: url("../img/logo/nerds-illustration.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
 }
 
 .desc {
@@ -624,6 +630,8 @@ background-color: var(--basic-grey);
 /* Main footer */
 
 .main-footer {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .contacts-title {
@@ -652,7 +660,6 @@ background-color: var(--basic-grey);
 
 .offer h3 {
   margin: 0;
-  width: 660px;
   text-align: left;
   font-weight: 700;
   font-size: 36px;
@@ -670,14 +677,9 @@ background-color: var(--basic-grey);
   color: var(--color-gray-600);
 }
 
-.footer-socials {
-  display: grid;
-  grid-template-columns: 1fr max-content;
-  text-align: center;
-}
-
 .footer-socials ul {
-  width: 260px;
+  grid-template-columns: 260px 1fr;
+  column-gap: 40px;
   justify-self: start;
   list-style: none;
 }

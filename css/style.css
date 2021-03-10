@@ -506,7 +506,7 @@ background-color: var(--basic-grey);
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 660px 1fr;
   column-gap: 140px;
 }
 
@@ -534,7 +534,6 @@ background-color: var(--basic-grey);
 .about-right {
   padding-top: 245px;
   justify-self: end;
-  background-color: var(--basic-white);
   background-image: url("../img/logo/nerds-illustration.svg");
   background-position: right top;
   background-repeat: no-repeat;
@@ -629,11 +628,6 @@ background-color: var(--basic-grey);
 
 /* Main footer */
 
-.main-footer {
-  margin: 0 auto;
-  width: 100%;
-}
-
 .contacts-title {
   font-weight: 700;
   font-size: 18px;
@@ -678,13 +672,17 @@ background-color: var(--basic-grey);
 }
 
 .footer-socials ul {
-  grid-template-columns: 260px 1fr;
-  column-gap: 40px;
   justify-self: start;
   list-style: none;
 }
 
 /* Footer social button */
+
+.footer-socials {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  column-gap: 140px;
+}
 
 .footer-socials a {
   display: inline-block;

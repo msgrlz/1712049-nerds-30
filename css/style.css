@@ -127,19 +127,13 @@ img {
 
 .main-navigation ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-left: 163px;
-  padding-right: 227px;
   list-style: none;
 }
 
 .site-navigation-item {
-  padding-right: 45px;
-}
-
-.site-navigation-item:last-child {
-  padding: 0;
+  margin-right: 45px;
 }
 
 .main-navigation a {
@@ -193,7 +187,6 @@ img {
   display: grid;
   grid-template-columns: 260px 1fr;
   column-gap: 140px;
-  margin-top: 62px;
   align-content: start;
 }
 
@@ -249,6 +242,9 @@ img {
 }
 
 .filters-value h3 {
+  margin: 0;
+  padding-top: 56px;
+  padding-bottom: 46px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -372,21 +368,23 @@ img {
   color: var(--color-gray-800);
 }
 
+/* Filters-sorting */
+
 .filters-sorting {
   display: flex;
+  padding-top: 56px;
+  padding-bottom: 46px;
 }
 
 .filters-sorting ul {
-  list-style: none;
   display: flex;
-  margin: auto;
-  margin-right: 0;
-  padding-left: 0;
-  align-items: center;
+  margin: 0;
+  align-items:center;
+  list-style: none;
 }
 
 .filters-sorting li {
-  padding-right: 18px;
+  padding-right: 26px;
 }
 
 .filters-sorting li:last-child {
@@ -394,6 +392,7 @@ img {
 }
 
 .filters-sorting p {
+  margin-right: auto;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -401,10 +400,11 @@ img {
   color: var(--basic-black);
 }
 
-/* Filters-sorting */
+.filters-sorting-variety {
+  padding-left: 0;
+}
 
 .filters-sorting-variety a {
-
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
@@ -601,7 +601,6 @@ background-color: var(--basic-grey);
 }
 
 .desc-item {
-  padding-top: 10px;
   font-weight: 400;
   line-height: 18px;
 }
@@ -704,9 +703,11 @@ background-color: var(--basic-grey);
   color: var(--color-gray-600);
 }
 
+/* Offer */
+
 .offer {
+  margin-left: 0;
   text-align: left;
-  justify-self: center;
 }
 
 .offer h3 {
@@ -734,6 +735,7 @@ background-color: var(--basic-grey);
   display: grid;
   grid-template-columns: 260px 1fr;
   column-gap: 140px;
+  align-items: center;
 }
 
 .footer-socials ul {
@@ -746,6 +748,7 @@ background-color: var(--basic-grey);
 
 .footer-socials a {
   margin: 0 9px;
+  margin-left: 0;
   display: inline-block;
   width: 81px;
   height: 81px;
